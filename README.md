@@ -46,4 +46,3 @@ GeminiX is licensed under the MIT License.
 Contact
 For questions, feedback, or support regarding GeminiX, please contact youssefelkomy500@email.com.
 ---------------------------------------------------------------------------------------------------------------
-Feel free to customize this README template further to include specific details about your project's architecture, dependencies, or usage instructions.
