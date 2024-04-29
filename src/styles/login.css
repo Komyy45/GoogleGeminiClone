@@ -1,0 +1,157 @@
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+    
+    .left {
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        animation-name: left;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-delay: 1s;
+    }
+    
+    .right {
+        flex: 1;
+        background-color: black;
+        transition: 1s;
+        background-image: url(https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    
+    
+    .header > h2 {
+        margin: 0;
+        background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 600;
+    }
+    
+    .header > h4 {
+        margin-top: 10px;
+        font-size: 15px;
+        color: rgba(0,0,0,.4);
+    }
+    
+    .form {
+        min-width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form > p {
+        margin-top: 5px;
+    }
+    
+    .form > p > a {
+        color: #000;
+        font-size: 14px;
+    }
+    
+    .form-field {
+        height: 46px;
+        padding: 0 16px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        outline: 0;
+        transition: .2s;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .form-field:focus {
+        border-color: #0f7ef1;
+    }
+    
+    .form > button{
+        padding: 12px 10px;
+        border-radius: 3px;
+        background: transparent;
+        border: 1px solid black;
+        color: black;
+        margin: 10px 0;
+        word-spacing: -1px;
+        letter-spacing: 0.5px;
+        transition: 0.3s;
+    }
+    .form > button:first-of-type {
+        border: 0;
+        background: linear-gradient(270deg, #4b90ff, #9ed7ff );
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    .form > button:hover{
+        box-shadow: 0 0 15px #9ed7ff;
+    }
+    .form > button:not(:first-of-type):hover{
+        border: 1px solid #4b90ff;
+        color: #4b90ff;
+    }
+    .form > button:not(:first-of-type):hover div img{
+        filter: drop-shadow(0 0 15px #9ed7ff);
+    }
+    .animation {
+        animation-name: move;
+        animation-duration: .4s;
+        animation-fill-mode: both;
+        animation-delay: 2s;
+    }
+    
+    .a1 {
+        animation-delay: 2s;
+    }
+    
+    .a2 {
+        animation-delay: 2.1s;
+    }
+    
+    .a3 {
+        animation-delay: 2.2s;
+    }
+    
+    .a4 {
+        animation-delay: 2.3s;
+    }
+    
+    .a5 {
+        animation-delay: 2.4s;
+    }
+    
+    .a6 {
+        animation-delay: 2.5s;
+    }
+    
+    @keyframes move {
+        0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-40px);
+        }
+    
+        100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        }
+    }
+    
+    @keyframes left {
+        0% {
+        opacity: 0;
+        width: 0;
+        }
+    
+        100% {
+        opacity: 1;
+        padding: 20px 40px;
+        width: 520px;
+        }
+    }

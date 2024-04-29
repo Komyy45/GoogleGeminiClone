@@ -1,0 +1,10 @@
+div .animateWidth{
+    animation: wid 1s  forwards;
+}
+@keyframes wid {
+    0%{
+    }
+    100%{
+        width: 100%;
+    }
+}

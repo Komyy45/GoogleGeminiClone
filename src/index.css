@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+#root{
+    min-height: 100vh;
+    max-height: 100vh;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    overflow-y: hidden;
+}
+.transition0_3s{
+    transition: 0.3s;
+}
+.gradient-text{
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.loading {
+    background: linear-gradient(270deg, #9ed7ff, #ffffff, #9ed7ff);
+    background-size: 300% 100%;
+    background-position: 0 0;
+    animation: background-position 1.5s infinite alternate;
+}
+.darkLoading{
+    background: linear-gradient(270deg, #4b90ff, #0e0e0f, #4b90ff);
+    background-size: 300% 100%;
+    background-position: 0 0;
+    animation: background-position 1.5s infinite alternate;
+}
+@keyframes background-position {
+    0%{}
+    100%{
+        background-position: 100% 0;
+    }
+}
+
+.content-box{
+    line-height: 1.8;
+    font-size: 17px;
+}
+.hideScrollbar::-webkit-scrollbar{
+    display: none;
+}
+
+.slideUp{
+    opacity: 1;
+    transform: translateY(0);    
+}
+.cardUp{
+    opacity: 0;
+    transform: translateY(40px);
+    animation: cardAnimate 1s;
+    animation-fill-mode: forwards;
+}
+.cardUp:nth-child(1){
+    animation-delay: 0.5s;
+}
+.cardUp:nth-child(2){
+    animation-delay: 0.75s;
+}
+.cardUp:nth-child(3){
+    animation-delay: 1s;
+}
+.cardUp:nth-child(4){
+    animation-delay: 1.25s;
+}
+@keyframes  cardAnimate {
+    0%{
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
